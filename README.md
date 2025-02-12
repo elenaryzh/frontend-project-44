@@ -10,3 +10,6 @@
 
 [![asciicast](https://asciinema.org/a/eEQBukLEuMomsj8qQsR360vi2.svg)](https://asciinema.org/a/eEQBukLEuMomsj8qQsR360vi2)
 
+## Demo Brain-Gcd game
+
+[![asciicast](https://asciinema.org/a/dGLGSM8BvUk0RxUsxavXsTQxq.svg)](https://asciinema.org/a/dGLGSM8BvUk0RxUsxavXsTQxq)
