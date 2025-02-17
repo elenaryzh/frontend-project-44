@@ -4,7 +4,7 @@
 
 ## Demo Brain-Even game
 
-[![asciicast](https://asciinema.org/a/JH7fDCbyUReLaUYDabiC5mjTH.svg)](https://asciinema.org/a/JH7fDCbyUReLaUYDabiC5mjTH)
+[![asciicast](https://asciinema.org/a/ELUzJDJ0Zs1oI7f6aVaov6H4N.svg)](https://asciinema.org/a/ELUzJDJ0Zs1oI7f6aVaov6H4N)
 
 ## Demo Brain-Calc game
 
@@ -17,3 +17,7 @@
 ## Demo Brain-Progression game
 
 [![asciicast](https://asciinema.org/a/ps2rNRtuwjPcVGHllaUewG3Zg.svg)](https://asciinema.org/a/ps2rNRtuwjPcVGHllaUewG3Zg)
+
+## Demo Brain-Prime game
+
+[![asciicast](https://asciinema.org/a/TmtAgHPyBLCn2LB4qH93UIT3U.svg)](https://asciinema.org/a/TmtAgHPyBLCn2LB4qH93UIT3U)
