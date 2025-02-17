@@ -1,4 +1,4 @@
-import { runGame } from '../index.js';
+import { runGame, generateRandomNumber } from '../index.js';
 
 const gcd = (num1, num2) => {
     if (num2 === 0) {
@@ -8,8 +8,8 @@ const gcd = (num1, num2) => {
 };
 
 const generateGcdGame = () => {
-    const num1 = Math.floor(Math.random() * 50);
-    const num2 = Math.floor(Math.random() * 50);
+    const num1 = generateRandomNumber(50); 
+    const num2 = generateRandomNumber(50); 
 
     return {
         question: `${num1} and ${num2}`,

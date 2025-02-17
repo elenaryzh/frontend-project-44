@@ -1,4 +1,4 @@
-import { runGame } from '../index.js';
+import { runGame, generateRandomNumber } from '../index.js';
 
 const operators = ['+', '-', '*'];
 
@@ -16,8 +16,8 @@ const calculate = (num1, num2, operator) => {
 };
 
 const generateCalcGame = () => {
-    const num1 = Math.floor(Math.random() * 20);
-    const num2 = Math.floor(Math.random() * 20);
+    const num1 = generateRandomNumber(20); 
+    const num2 = generateRandomNumber(20); 
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     return {

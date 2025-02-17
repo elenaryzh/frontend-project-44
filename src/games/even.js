@@ -1,9 +1,8 @@
-import { runGame } from '../index.js';
-
+import { runGame, generateRandomNumber } from '../index.js'; 
 const isEven = (num) => num % 2 === 0;
 
 const generateEvenGame = () => {
-    const num = Math.floor(Math.random() * 100);
+    const num = generateRandomNumber(100); 
     return {
         question: `${num}`,
         correctAnswer: isEven(num) ? 'yes' : 'no',

@@ -1,4 +1,4 @@
-import { runGame } from '../index.js';
+import { runGame, generateRandomNumber } from '../index.js';
 
 function isPrime(num) {
     for (let i = 2; i < num; i++) {
@@ -8,7 +8,7 @@ function isPrime(num) {
   };
 
   const generatePrimeGame = () => {
-    const num = Math.floor(Math.random() * 50);
+    const num = generateRandomNumber(50);
     return {
         question: `${num}`,
         correctAnswer: isPrime(num) ? 'yes' : 'no',

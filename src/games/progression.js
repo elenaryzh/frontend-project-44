@@ -1,7 +1,7 @@
-import { runGame } from '../index.js';
+import { runGame, generateRandomNumber } from '../index.js';
 
 const generateProgressionGame = () => {
-    const start = Math.floor(Math.random() * 20); 
+    const start = generateRandomNumber(20); 
     const step = Math.floor(Math.random() * 10) + 1; 
     const length = Math.floor(Math.random() * 6) + 5; 
 
