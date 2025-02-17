@@ -12,7 +12,7 @@ const generateGcdGame = () => {
     const num2 = generateRandomNumber(50); 
 
     return {
-        question: `${num1} and ${num2}`,
+        question: `${num1} ${num2}`,
         correctAnswer: String(gcd(num1, num2)), 
     };
 };
