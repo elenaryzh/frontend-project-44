@@ -3,7 +3,7 @@ import { runGame, generateRandomNumber } from '../index.js';
 const findGCD = (num1, num2) => {
   let a = num1;
   let b = num2;
-  
+
   while (b !== 0) {
     a %= b;
     [a, b] = [b, a];
@@ -15,7 +15,7 @@ const generateGCDGame = () => {
   const num1 = generateRandomNumber(100);
   const num2 = generateRandomNumber(100);
   const correctAnswer = findGCD(num1, num2).toString();
-  
+
   return {
     question: `${num1} ${num2}`,
     correctAnswer,
