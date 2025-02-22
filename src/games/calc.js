@@ -5,13 +5,12 @@ const operators = ['+', '-', '*'];
 const calculate = (num1, num2, operator) => {
     if (operator === '+') {
         return num1 + num2;
-    } else if (operator === '-') {
+    }
+    if (operator === '-') {
         return num1 - num2;
-    } else if (operator === '*') {
+    }
+    if (operator === '*') {
         return num1 * num2;
-    } else {
-        console.log(`Error: Unknown operator '${operator}'. Please use +, -, *.`);
-        return null;
     }
 };
 

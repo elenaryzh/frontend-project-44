@@ -1,20 +1,23 @@
 import { runGame, generateRandomNumber } from '../index.js';
 
-const gcd = (num1, num2) => {
-    if (num2 === 0) {
-        return num1;
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
+    if (num % i === 0) {
+      return false;
     }
-    return gcd(num2, num1 % num2);
+  }
+  return true;
 };
 
-const generateGcdGame = () => {
-    const num1 = generateRandomNumber(50); 
-    const num2 = generateRandomNumber(50); 
-
-    return {
-        question: `${num1} ${num2}`,
-        correctAnswer: String(gcd(num1, num2)), 
-    };
+const generatePrimeGame = () => {
+  const num = generateRandomNumber(100);
+  return {
+    question: `${num}`,
+    correctAnswer: isPrime(num) ? 'yes' : 'no',
+  };
 };
 
-export default () => runGame(generateGcdGame, 'Find the greatest common divisor of given numbers.');
+export default () => runGame(generatePrimeGame, 'Answer "yes" if the number is prime, otherwise answer "no".');
