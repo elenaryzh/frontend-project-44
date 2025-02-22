@@ -1,11 +1,14 @@
 import { runGame, generateRandomNumber } from '../index.js';
 
 const findGCD = (num1, num2) => {
-  while (num2 !== 0) {
-    num1 = num1 % num2;
-    [num1, num2] = [num2, num1];
+  let a = num1;
+  let b = num2;
+  
+  while (b !== 0) {
+    a %= b;
+    [a, b] = [b, a];
   }
-  return num1;
+  return a;
 };
 
 const generateGCDGame = () => {
