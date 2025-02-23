@@ -16,13 +16,13 @@ const calculate = (num1, num2, operator) => {
 };
 
 const generateCalcGame = () => {
-  const num1 = generateRandomNumber(20); 
-  const num2 = generateRandomNumber(20); 
+  const num1 = generateRandomNumber(20);
+  const num2 = generateRandomNumber(20);
   const operator = operators[Math.floor(Math.random() * operators.length)];
 
   return {
     question: `${num1} ${operator} ${num2}`,
-    correctAnswer: String(calculate(num1, num2, operator)), 
+    correctAnswer: String(calculate(num1, num2, operator)),
   };
 };
 
