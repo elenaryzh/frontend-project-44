@@ -1,12 +1,19 @@
 import readlineSync from 'readline-sync';
-import welcomeUser from './cli.js';
 
 const maxRounds = 3;
 
-export const generateRandomNumber = (range) => Math.floor(Math.random() * range);
+const welcomeUser = () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name?');
+  console.log(`Hello, ${userName}!`);
+  return userName;
+};
 
 export const runGame = (gameLogic, description) => {
-  const name = welcomeUser();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+
   console.log(description);
 
   for (let round = 0; round < maxRounds; round += 1) {

@@ -1,4 +1,5 @@
-import { runGame, generateRandomNumber } from '../index.js';
+import { runGame } from '../index.js';
+import { generateRandomNumber } from '../random.js';
 
 function isPrime(num) {
   if (num <= 1) return false;
