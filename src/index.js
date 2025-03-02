@@ -2,14 +2,7 @@ import readlineSync from 'readline-sync';
 
 const maxRounds = 3;
 
-const welcomeUser = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  return userName;
-};
-
-export const runGame = (gameLogic, description) => {
+const runGame = (gameLogic, description) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -32,3 +25,5 @@ export const runGame = (gameLogic, description) => {
 
   console.log(`Congratulations, ${name}!`);
 };
+
+export default runGame;
