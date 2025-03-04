@@ -40,5 +40,5 @@ The games should be playable via the command line interface.
 
 Clone the repository to your local machine.
 Run npm install or yarn install to install dependencies.
-Run the desired game with node <game-name> .js.
+Run the desired game with node game-name.js.
 
