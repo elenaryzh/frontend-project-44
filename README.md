@@ -37,8 +37,9 @@ The project requires Node.js and npm to be installed.
 The games should be playable via the command line interface.
 
 ## Installation and Setup:
-
-Clone the repository to your local machine.
-Run npm install or yarn install to install dependencies.
-Run the desired game with node game-name.js.
+<ul>
+<li>Clone the repository to your local machine.</li>
+<li>Run npm install or yarn install to install dependencies.</li>
+<li>Run the desired game with node game-name.js.</li>
+</ul>
 
